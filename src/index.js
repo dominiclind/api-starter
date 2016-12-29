@@ -34,7 +34,12 @@ app.use(bodyParser.json({
 app.use(middleware({ config }));
 
 // The database function returns the models.
-const models = db(`mongodb://${process.env.DB_HOST}/${process.env.DB_DATABASE}`);
+let models;
+if (process.env.NODE_ENV == 'PRODUCTION') {
+	models = db(MONGO_URL);
+} else {
+ 	models = db(`mongodb://${process.env.DB_HOST}/${process.env.DB_DATABASE}`);
+}
 app.models = models;
 // Attach the models to the request object
 // so we can reach it in middleware and routes
