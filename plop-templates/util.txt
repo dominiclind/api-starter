@@ -1,0 +1,15 @@
+/*
+
+	# NAME: 
+	{{properCase util}}
+
+	# DESCRIPTION: 
+	{{sentenceCase description}}
+
+*/
+
+const {{dashCase name}} = () => {
+
+};
+
+export default {{dashCase name}};

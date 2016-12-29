@@ -1,0 +1,7 @@
+$1
+// {{camelCase type}} /{{pathCase route}}
+exports.{{camelCase function}} = (req, res) => {
+	res.json({
+
+	})
+};

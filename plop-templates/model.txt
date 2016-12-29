@@ -1,0 +1,24 @@
+/*
+
+  # NAME: 
+  {{properCase name}}
+  {{#if description}}
+  # DESCRIPTION: 
+  {{sentenceCase description}}
+  {{/if}}
+  # MONGOOSE SCHEMA:
+  http://mongoosejs.com/docs/schematypes.html
+
+*/
+
+const mongoose = require('mongoose');
+mongoose.Promise = require('bluebird');
+const Schema = mongoose.Schema;
+
+const {{properCase name}}Schema = new Schema({
+  prop: { type: String },
+  date: { type: Date, default: Date.now },
+  enabled: Boolean,
+});
+
+export default mongoose.model('{{properCase name}}', {{properCase name}}Schema);

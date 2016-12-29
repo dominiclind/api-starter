@@ -1,0 +1,17 @@
+/*
+
+  # APP DOMAIN: 
+  {{properCase domain }}
+  {{#if description}}
+  # DESCRIPTION: 
+  {{sentenceCase description}}
+  {{/if}}
+
+*/
+
+/*functions*/
+exports.function = (req, res) => {
+  res.json({
+  
+  })
+};
