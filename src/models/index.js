@@ -4,6 +4,8 @@
 //
 
 
-/*import models*/import Item from './item';import User from './user';
+/*import models*/
+import User from './user';
 
-/*export models*/exports.Item = Item;exports.User = User;
+/*export models*/
+exports.User = User;
