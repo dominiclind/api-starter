@@ -18,7 +18,7 @@ import { generateTokenFromUser, authHeader } from './helper'
 import User from '../src/models/user';
 
 describe('#Auth', () => {
-  describe('Login /api/login/', () => {
+  describe('Login /api/auth/login/', () => {
 
     it('Should return a user object and a token', done => {
       //GET ACCESS TOKEN FROM FACEBOOK DEV ACCOUNT, will fail if token is not up to date
